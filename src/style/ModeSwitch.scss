@@ -1,0 +1,44 @@
+.mode {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 1.5em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mode__switch,
+.mode__switch-button {
+  transition: all 0.2s ease-in-out;
+}
+
+.mode__switch {
+  height: 1.5em;
+  width: calc(1.5em * 2);
+  border: 2px solid red;
+  box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.33);
+  border-radius: 1.5em;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+.mode__switch-button {
+  height: calc(1.5em - (2 * 2px));
+  width: calc(1.5em - (2 * 2px));
+  border: 2px solid red;
+  border-radius: calc(1.5em - (2 * 2px));
+  background: red;
+}
+
+.mode__switch--is-easy-mode {
+  background-color: red;
+}
+
+.mode__switch--is-easy-mode .mode__switch-button {
+  background: white;
+  transform: translateX(calc(calc(1.5em - (2 * 2px)) + (2 * 2px)));
+}
+
+.mode__label {
+  margin-left: 10px;
+}

@@ -1,0 +1,43 @@
+.dice {
+  background: #c2111d;
+  color: white;
+  display: flex;
+  border-radius: 25px;
+  transform-origin: center center;
+  transition: transform 0.7s;
+  // transform-style: preserve-3d;
+}
+
+.dice-face {
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  font-size: 3rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.dice-face span {
+  line-height: 0.8;
+}
+
+.face--regular {
+  font-size: 2.8rem;
+}
+
+.face--nollie {
+  font-size: 3rem;
+}
+
+.face--switch {
+  font-size: 3rem;
+}
+
+.face--frontside,
+.face--backside {
+  font-size: 3rem;
+}
+
+.dice--rolling {
+  transform: rotateY(360deg);
+}

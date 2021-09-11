@@ -16,6 +16,13 @@
   justify-content: space-between;
 }
 
+@media screen and (min-width: 992px) {
+  .board {
+    height: 70px;
+    top: calc(12vh - (70px / 2));
+  }
+}
+
 .board--top {
   transform: rotate(45deg);
   z-index: 1;

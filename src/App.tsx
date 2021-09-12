@@ -27,11 +27,13 @@ function App() {
     }, 499);
   };
 
+  document.title = 'Sk8dice.io - React App';
+
   return (
     <div className="app-container">
       <h1>SK8 DICE</h1>
       <h5>
-        By <a href="gauthierand.company">Gauthier</a>
+        By <a href="http://www.gauthierand.company">Gauthier</a>
       </h5>
       <div className="dices">
         {allDice.map((TagName, index) => {

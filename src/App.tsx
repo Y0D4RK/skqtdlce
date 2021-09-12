@@ -29,11 +29,10 @@ function App() {
 
   return (
     <div className="app-container">
-      <h1>
-        SK8
-        <br /> DICE
-      </h1>
-      <h5>By Gauthier</h5>
+      <h1>SK8 DICE</h1>
+      <h5>
+        By <a href="gauthierand.company">Gauthier</a>
+      </h5>
       <div className="dices">
         {allDice.map((TagName, index) => {
           return (

@@ -15,20 +15,28 @@
 }
 
 .roll-dice {
-  margin-top: 20px;
+  margin-top: 30px;
   button {
     font-size: 1.5rem;
+    font-weight: bold;
     display: block;
     width: 320px;
     height: auto;
     margin: 0 auto;
     padding: 20px;
-    border: none;
+    border: 3px solid transparent;
     border-radius: 0.5rem;
     outline: none;
     background-color: #c2111d;
     color: #ffffff;
     cursor: pointer;
+    transition: 0.2s ease-in;
+    &:hover {
+      background-color: #222222;
+      color: #c2111d;
+      border: 3px solid #c2111d;
+      transition: 0.2s ease-in;
+    }
   }
 }
 // @media screen and (min-width: 992px) {

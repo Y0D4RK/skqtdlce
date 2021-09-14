@@ -1,4 +1,4 @@
-// import { useSelector } from 'react-redux';
+import { RootStateOrAny, useSelector } from 'react-redux';
 
 import Dice from './Dice';
 import Switch from './Faces/Switch';
@@ -14,10 +14,9 @@ type DiceProps = {
 };
 
 function StanceDice({ selectedSideIndex, toggleRoll }: DiceProps) {
-  // const isEasyMode = useSelector((state) => {
-  //   return state.isEasyMode;
-  // });
-  const isEasyMode = true;
+  const isEasyMode = useSelector((state: RootStateOrAny) => state.isEasyMode);
+
+  // const isEasyMode = true;
 
   const regularModeDiceFaces = [
     Wild,

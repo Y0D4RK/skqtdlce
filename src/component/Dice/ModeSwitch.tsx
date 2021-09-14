@@ -1,26 +1,24 @@
-// import { useSelector, useDispatch } from 'react-redux';
-// import { toggleEasyMode } from './store';
+import { useSelector, useDispatch, RootStateOrAny } from 'react-redux';
+import { toggleEasyMode } from '../../store';
 
 import '../../style/ModeSwitch.scss';
 
 const ModeSwitch = () => {
-  // const isEasyMode = useSelector((state) => {
-  //   return state.isEasyMode;
-  // });
-  const isEasyMode = true;
-  // const dispatch = useDispatch();
+  const isEasyMode = useSelector((state: RootStateOrAny) => state.isEasyMode);
+  // const isEasyMode = true;
+  const dispatch = useDispatch();
 
   return (
-    <div className="Mode">
+    <div className="mode">
       <div
-        className={`Mode__switch${
-          isEasyMode ? ' Mode__switch--is-easy-mode' : ''
+        className={`mode__switch${
+          isEasyMode ? ' mode__switch--is-easy-mode' : ''
         }`}
-        // onClick={() => dispatch(toggleEasyMode())}
+        onClick={() => dispatch(toggleEasyMode())}
       >
-        <div className="Mode__switch-button"></div>
+        <div className="mode__switch-button"></div>
       </div>
-      <div className="Mode__label">WARM-UP MODE</div>
+      <div className="mode__label">WARM-UP MODE</div>
     </div>
   );
 };

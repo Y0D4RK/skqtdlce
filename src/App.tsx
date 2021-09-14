@@ -6,7 +6,7 @@ import DirectionDice from './component/Dice/DirectionDice';
 import FlipTrickDice from './component/Dice/FlipTrickDice';
 import SpinDegreeDice from './component/Dice/SpinDegreeDice';
 import StanceDice from './component/Dice/StanceDice';
-// import ModeSwitch from './component/Dice/ModeSwitch';
+import ModeSwitch from './component/Dice/ModeSwitch';
 
 function App() {
   const [selectedSide, setSelectedSide] = useState([0, 1, 1, 0]);
@@ -58,7 +58,7 @@ function App() {
         </button>
       </div>
 
-      {/* <ModeSwitch></ModeSwitch> */}
+      <ModeSwitch></ModeSwitch>
     </div>
   );
 }

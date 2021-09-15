@@ -1,18 +1,32 @@
+$diceBorder: solid #99111d;
+$diceBorderTop: solid #e61422;
+
 .dice {
-  background: #c2111d;
+  // background: #c2111d;
+  background-image: linear-gradient(
+    to right bottom,
+    #e61422,
+    #cb101e,
+    #b10d1a,
+    #970915,
+    #7e0711
+  );
   color: white;
   display: flex;
   border-radius: 25px;
   transform-origin: center center;
   transition: transform 0.7s;
-  // transform-style: preserve-3d;
+  border-right: 16px $diceBorder;
+  border-left: 0px;
+  border-bottom: 10px $diceBorder;
+  border-top: 8px $diceBorderTop;
 }
 
 .dice-face {
   display: flex;
   margin: auto;
   flex-direction: column;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 900;
   text-align: center;
 }
@@ -22,20 +36,20 @@
 }
 
 .face--regular {
-  font-size: 2.8rem;
+  font-size: 1.5rem;
 }
 
 .face--nollie {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .face--switch {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .face--frontside,
 .face--backside {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .dice--rolling {

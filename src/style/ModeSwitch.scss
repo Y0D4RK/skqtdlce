@@ -17,6 +17,7 @@
   height: 1.5em;
   width: calc(1.5em * 2);
   border: 2px solid #c2111d;
+  background-color: #ffffff;
   box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.33);
   border-radius: 1.5em;
   box-shadow: none;
@@ -26,7 +27,7 @@
 .mode__switch-button {
   height: calc(1.5em - (2 * 2px));
   width: calc(1.5em - (2 * 2px));
-  border: 2px solid #c2111d;
+  border: 2px solid #fff;
   border-radius: calc(1.5em - (2 * 2px));
   background: #c2111d;
 }

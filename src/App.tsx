@@ -10,7 +10,7 @@ import ModeSwitch from './component/Dice/ModeSwitch';
 
 function App() {
   const [selectedSide, setSelectedSide] = useState([0, 1, 1, 0]);
-  const [toggleRoll, setToggleRoll] = useState(false);
+  const [toggleRoll, setToggleRoll] = useState(true);
 
   const [allDice, setAllDice] = useState([
     DirectionDice,
@@ -32,9 +32,10 @@ function App() {
 
   return (
     <div className="app-container">
-      <h1>SK8 DICE</h1>
+      <h1>SK8DICE</h1>
       <h5>
-        made by <a href="http://www.gauthierand.company">Gauthier</a>
+        made by <a href="http://gauthier.cornette.io">Gauthier</a> with
+        &#128153;
       </h5>
       <div className="dices">
         {allDice.map((TagName, index) => {
@@ -55,8 +56,12 @@ function App() {
           onClick={rollDice}
           className="rolldice__button"
         >
-          Roll&#39;em
+          PRESS ME <br />
+          to roll the dices !
         </button>
+        <p className="slogan">
+          ...and start the <strong>real game</strong> !
+        </p>
       </div>
 
       <ModeSwitch></ModeSwitch>

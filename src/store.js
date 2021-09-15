@@ -21,7 +21,7 @@ const enhancers = compose(
 );
 
 const state = {
-  isEasyMode: false,
+  isEasyMode: true,
 };
 
 export const store = createStore(reducer, state, enhancers);

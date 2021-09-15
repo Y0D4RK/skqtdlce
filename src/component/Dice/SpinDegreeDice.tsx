@@ -13,7 +13,6 @@ type DiceProps = {
 
 function SpinDegreeDice({ selectedSideIndex, toggleRoll }: DiceProps) {
   const isEasyMode = useSelector((state: RootStateOrAny) => state.isEasyMode);
-  // const isEasyMode = true;
 
   const regularModeDiceFaces = [
     Wild,

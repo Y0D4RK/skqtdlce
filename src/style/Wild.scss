@@ -7,11 +7,11 @@
 .board {
   position: absolute;
   border: 2px solid white;
-  background-color: #c2111d;
-  height: 45px;
-  border-radius: 45px;
+  background-color: #b10d1a;
+  height: 40px;
+  border-radius: 40px;
   width: 100%;
-  top: calc(12vh - (45px / 2));
+  top: calc(8.5vh - (60px / 2));
   display: flex;
   justify-content: space-between;
 }
@@ -19,13 +19,13 @@
 @media screen and (min-width: 768px) {
   .board {
     height: 80px;
-    top: calc(12vh - (70px / 2));
+    top: calc(8.5vh - (70px / 2));
   }
 }
 @media screen and (min-width: 992px) {
   .board {
     height: 70px;
-    top: calc(12vh - (70px / 2));
+    top: calc(8.5vh - (90px / 2));
   }
 }
 
@@ -49,11 +49,11 @@
 }
 
 .board-bolts--left {
-  margin-left: 25px;
+  margin-left: 20px;
 }
 
 .board-bolts--right {
-  margin-right: 25px;
+  margin-right: 20px;
 }
 
 .board-bolt {

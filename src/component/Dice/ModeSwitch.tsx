@@ -5,7 +5,7 @@ import '../../style/ModeSwitch.scss';
 
 const ModeSwitch = () => {
   const isEasyMode = useSelector((state: RootStateOrAny) => state.isEasyMode);
-  // const isEasyMode = true;
+
   const dispatch = useDispatch();
 
   return (

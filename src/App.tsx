@@ -11,6 +11,7 @@ import ModeSwitch from './component/Dice/ModeSwitch';
 function App() {
   const [selectedSide, setSelectedSide] = useState([0, 1, 1, 0]);
   const [toggleRoll, setToggleRoll] = useState(false);
+
   const [allDice, setAllDice] = useState([
     DirectionDice,
     FlipTrickDice,
@@ -27,13 +28,13 @@ function App() {
     }, 499);
   };
 
-  document.title = 'Sk8dice.io - React App';
+  document.title = 'SkateDice.io - React App';
 
   return (
     <div className="app-container">
       <h1>SK8 DICE</h1>
       <h5>
-        By <a href="http://www.gauthierand.company">Gauthier</a>
+        made by <a href="http://www.gauthierand.company">Gauthier</a>
       </h5>
       <div className="dices">
         {allDice.map((TagName, index) => {
